@@ -23,6 +23,13 @@
   <link rel="stylesheet" href="assets/gallery/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="assets/images/deepak-gaming1.gif" alt="#" /></div>
+      </div>
+      <!-- end loader --> 
   
   
 </head>
@@ -624,6 +631,7 @@ document.oncontextmenu=new Function("return false")
   <script src="assets/gallery/script.js"></script>
   <script src="assets/slidervideo/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
+  <script src="assets/mobirise/js/custom.js"></script>
   
   
 </body>
@@ -652,6 +660,28 @@ document.oncontextmenu=new Function("return false")
   <source src="assets/audio/dgaudio.wav" type="audio/mpeg">
 Your browser does not support the audio element.
 </audio>
+
+
+  
+
+      <script>
+         $(document).ready(function(){
+         $(".fancybox").fancybox({
+         openEffect: "none",
+         closeEffect: "none"
+         });
+         
+         $(".zoom").hover(function(){
+         
+         $(this).addClass('transition');
+         }, function(){
+         
+         $(this).removeClass('transition');
+         });
+         });
+         
+      </script> 
+
 
 </body>
 </html>
